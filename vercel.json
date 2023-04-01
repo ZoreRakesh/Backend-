@@ -4,6 +4,8 @@
         {
             "src":"api/main.py",
             "use":"@vercel/python"
+        },{
+            "buildCommand" : "next build"
         }
 
     ],

@@ -1,7 +1,5 @@
 {
     "version":2,
-    
-  
     "builds":[
         {
             "src":"api/main.py",

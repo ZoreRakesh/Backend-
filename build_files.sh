@@ -1,5 +1,0 @@
-echo "BUILD START"
-python3.9 -m pip install -r requirement.txt
-python3.9 main.py collectstatic --noinput --clear
-echo "BUILD END"
- 

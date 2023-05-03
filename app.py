@@ -62,38 +62,47 @@ async def nameRoute(item: Item):
 
 
         #( response = f'{height}' #re-assigning response with the name we got from the user)
-# This is a SDK from firebase
 
-    config = {
-        "apiKey": "AIzaSyD4n2356evIuRlqkMuq5do3wTUzEL3kFeM",
-        "authDomain": "you domain",
-        "databaseURL":"https://insta-clone-c4d7e-default-rtdb.firebaseio.com",
-        "projectId": "insta-clone-c4d7e",
-        "storageBucket": "insta-clone-c4d7e.appspot.com",
-        # Don't forget to format the "double-quotes" for the strings, firebase not make that!
-        "messagingSenderId":"1094506106434",
-        "appId":  "1:1094506106434:web:3dd15d07dd0a2389e527db",
+    # This is a SDK from firebase
+    # Using files stored in firebase
+    # config = {
+    #     "apiKey": "AIzaSyD4n2356evIuRlqkMuq5do3wTUzEL3kFeM",
+    #     "authDomain": "you domain",
+    #     "databaseURL":"https://insta-clone-c4d7e-default-rtdb.firebaseio.com",
+    #     "projectId": "insta-clone-c4d7e",
+    #     "storageBucket": "insta-clone-c4d7e.appspot.com",
+    #     # Don't forget to format the "double-quotes" for the strings, firebase not make that!
+    #     "messagingSenderId":"1094506106434",
+    #     "appId":  "1:1094506106434:web:3dd15d07dd0a2389e527db",
 
-        }   
+    #     }   
 
-    firebase = pyrebase.initialize_app(config)  # data from the config
-    storage = firebase.storage()  # storage of database
-
-
-    Food = storage.child('csv_files/foodfin.csv').get_url(None)
-    Final = storage.child('csv_files/Final_Data.csv').get_url(None)
-    mlpmodel = storage.child('F_MLP_model.pkl').get_url(None)
+    # firebase = pyrebase.initialize_app(config)  # data from the config
+    # storage = firebase.storage()  # storage of database
 
 
-    ML = urllib.request.urlopen(mlpmodel)
-    myfile = ML.read()
+    # Food = storage.child('csv_files/foodfin.csv').get_url(None)
+    # Final = storage.child('csv_files/Final_Data.csv').get_url(None)
+    # mlpmodel = storage.child('F_MLP_model.pkl').get_url(None)
+
+
+    # ML = urllib.request.urlopen(mlpmodel)
+    # myfile = ML.read()
+
+    # # load datasets
+    # Food_data = pd.read_csv(Food)
+    # Final_data = pd.read_csv(Final)
+
+    # # Load Model
+    # MLP_loaded_mpdel=pd.read_pickle(mlpmodel)
 
     # load datasets
-    Food_data = pd.read_csv(Food)
-    Final_data = pd.read_csv(Final)
+    Food_data = pd.read_csv('foodfin.csv')
+    Final_data = pd.read_csv("Final_Data.csv")
 
     # Load Model
-    MLP_loaded_mpdel=pd.read_pickle(mlpmodel)
+    MLPmodel='F_MLP_model.pkl'
+    MLP_loaded_mpdel=pickle.load(open(MLPmodel, 'rb'))
 
 
     #Pipeline to standerdize data
@@ -202,25 +211,25 @@ async def nameRoute(item: Item):
         breakfast_items = Food_data[Food_data['Breakfast'] == 1].reset_index(drop=True)
         breakfast_items = breakfast_items.sample(n=3)
         bc = breakfast_items['Calories'].sum()
-        return breakfast_items[['Food_items', 'Calories']]
+        return breakfast_items[['Food_items']]
 
 # Define function to recommend lunch
     def recommend_lunch():
         lunch_items = Food_data[Food_data['Lunch'] == 1].reset_index(drop=True)
         lunch_items = lunch_items.sample(n=4)
-        return lunch_items[['Food_items', 'Calories']]
+        return lunch_items[['Food_items']]
         return lunch_items['Calories'].sum()
 
 # Define function to recommend dinner
     def recommend_dinner():
         dinner_items = Food_data[Food_data['Dinner'] == 1].reset_index(drop=True)
         dinner_items = dinner_items.sample(n=3)
-        return dinner_items[['Food_items', 'Calories']]
+        return dinner_items[['Food_items']]
         return dinner_items['Calories'].sum()
 
 
-    breakfast = f"Total calories for breakfast: {caloric_needs * 0.25}:\nRecommend breakfast:\n{recommend_breakfast()}\n"
-    lunch = f"Total calories for lunch: {caloric_needs * 0.25}:\n{recommend_lunch()}\n"
+    breakfast = f"Total calories for breakfast: {caloric_needs * 0.30}:\nRecommend breakfast:\n{recommend_breakfast()}\n"
+    lunch = f"Total calories for lunch: {caloric_needs * 0.40}:\n{recommend_lunch()}\n"
     dinner = f"Total calories for dinner: {caloric_needs * 0.25}:\n{recommend_dinner()}\n"
 
 

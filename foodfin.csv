@@ -1,0 +1,90 @@
+Food_items,Breakfast,Lunch,Dinner,VegNovVeg,Calories,Fats,Proteins
+Fruit Salad,0,1,1, ,22,0.2,2.4
+Apples,1,0,0,0,160,15,2
+Bananas,1,0,0,0,89,0.3,1.1
+Bagels made in wheat,0,1,1,0,250,1.5,10
+Berries,1,0,0,0,349,0.4,14
+Brocolli,0,1,1,0,25,0.5,3.8
+Brown Rice,0,1,1,0,362,2.7,7.5
+Cauliflower,0,1,1,0,32,0.3,3
+Paneer,1,0,0,0,331,24,20
+Coffee,1,0,0,0,2,0,0.3
+Corn,1,1,1,0,97,1.4,3.3
+Dark chocolates,0,0,1,0,556,32,5.5
+Grapes,1,0,0,0,93,2.1,5.6
+Milk,1,0,1,0,97,6.9,3.8
+Cashew Nuts,1,0,0,0,553,44,18
+Onions,0,1,1,0,40,0.1,1.1
+Orange,1,0,0,0,97,0.2,1.5
+Pasta canned with tomato sauce,0,1,1,0,71,0.7,2.2
+Pears,1,0,0,0,57,0.1,0.4
+Peas,0,1,1,0,81,0.4,5.4
+Dalia,1,0,0,0,411,17,46
+Pumpkin,0,1,1,0,18,0.1,0.7
+Peanut Butter,0,1,0,1,187,9.3,16
+Buttermilk,0,0,1,1,184,6.3,30
+Boiled Dal,0,0,1,0,298,14,12
+Vegetable Khichdi,0,0,1,0,276,11,11
+French Toast,0,1,1,0,289,14,3.5
+Salad,0,1,1,1,292,15,18
+Cheese Burger,0,1,1,0,256,12,13
+Sandwich,0,1,1,1,257,12,15
+Sugar Doughnuts,0,1,1,0,426,23,5.2
+Chocolate Doughnuts,0,1,0,0,452,25,4.9
+Custard apple,1,0,1,0,381,1.4,2
+Pop Corn,1,0,1,0,429,9.5,13
+Dosa,1,1,1,0,168,3.7,4.5
+Idli,1,1,1,0,156,1.7,5
+Poha,1,0,0,0,130,1.5,2.6
+Flat Bread,0,1,1,0,297,7.5,11
+Tomato,1,1,1,0,16,0.2,1.2
+Yogurt,1,1,1,0,60,4,3.1
+Moong dal halwa,1,0,0,0,407,6.2,4.4
+Rice Pasta,0,1,1,0,108,0.2,1.8
+Uttapam,1,1,1,0,188,7.2,4.4
+Poha,1,0,0,0,151,2.4,9
+Dal Makhani,0,1,1,0,109,8.5,2.1
+Almonds,1,0,0,0,579,50,21
+Mushrooms,1,1,1,0,22,0.3,3.1
+Besan Chilla,1,0,0,1,196,15,14
+Sweet Potatoes cooked,1,1,0,0,76,0.1,1.4
+Boiled Potatoes,1,1,1,0,87,0.1,1.9
+White Rice,0,1,1,0,360,0.6,6.6
+Orange juice,1,0,0,0,45,0.2,0.7
+Greek yogurt plain,1,1,1,0,73,1.9,10
+Oat Bran Cooked,1,0,0,0,40,0.9,3.2
+Green Tea,1,0,0,0,1,0,0.2
+Chia seeds,1,0,0,0,486,31,17
+Cottage cheese with vegetables,0,0,1,0,95,4.2,11
+Tomato soup,0,0,1,1,127,4.4,21
+Cereals-Corn Flakes,1,0,0,0,384,0.9,5.9
+Beans,0,1,0,0,31,0.2,1.8
+Lentils,0,1,0,0,101,0.5,8.8
+Pasta with corn homemade,0,1,1,0,126,0.7,2.6
+Tea,1,0,0,0,1,0,0
+Apples,1,0,0,0,52,0.2,0.3
+Strawberries,1,0,0,0,32,0.3,0.7
+Oats,1,0,0,0,120,1.9,4.4
+Dried nuts,0,1,1,1,109,2.3,21
+Baked Sweet Potato,0,0,1,1,114,2.3,22
+Naan Bread piece,0,0,1,1,295,15,19
+Sprouts,0,1,1,1,255,13,3.3
+Chole,0,0,1,0,195,4.9,3.6
+Dal,0,0,1,1,319,20,14
+vegetable stew,0,0,1,1,170,8.5,7.8
+Macroni n Cheese ,0,1,1,0,194,12,6.5
+Paratha,0,0,1,1,297,21,26
+Rajma,0,0,1,1,146,2.8,28
+Potatoe chips,0,1,0,0,350,22,4.3
+Vegetable curry,0,1,1,1,351,22,18
+beans,0,1,1,1,203,10,27
+Lentils soup,0,1,0,1,159,4,29
+Tofu,1,0,0,1,550,50,22
+Banana Chips,1,0,0,0,519,34,2.3
+Honey,1,0,0,0,304,0,0.3
+Chocolate Icecream,0,0,1,0,216,11,3.8
+Vanilla Ice cream,0,0,1,0,207,11,3.5
+Strawberry Icecream,0,0,1,0,192,8.4,3.2
+Wheat Roti,0,0,1,0,318,0.2,1.8
+Chocolate milk,1,0,0,0,535,30,7.7
+Kheer,0,0,1,0,376,0.1,2.7
